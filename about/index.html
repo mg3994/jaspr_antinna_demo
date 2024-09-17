@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="/jaspr_antinna_demo/"/>
+    <meta charset="utf-8"/>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto);
+      html, body {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        font-size: 4rem;
+        margin: unset;
+      }
+    </style>
+    <link href="manifest.json" rel="manifest"/>
+    <!--$-->
+    <title>About</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--/-->
+    <script src="src/pages/about.client.dart.js" defer></script>
+    <style>
+      .counter {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-top-color: #01589B;
+        border-bottom-color: #01589B;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+      }
+      .counter button {
+        font-size: 2rem;
+        width: 2em;
+        height: 2em;
+        border: unset;
+        cursor: pointer;
+        border-radius: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+      }
+      .counter button:hover {
+        background-color: #0001;
+      }
+      .counter span {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        box-sizing: border-box;
+        min-width: 2.5em;
+        color: #01589B;
+        font-size: 4rem;
+        text-align: center;
+      }
+      header {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+      }
+      header nav {
+        background-color: #01589B;
+        height: 3em;
+        border-radius: 10px;
+        overflow: clip;
+        display: flex;
+        justify-content: space-between;
+      }
+      header nav a {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+        padding-left: 2em;
+        padding-right: 2em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      header nav a:hover {
+        background-color: #0005;
+      }
+      header nav div.active {
+        position: relative;
+      }
+      header nav div.active::before {
+        content: "";
+        display: block;
+        height: 2px;
+        border-radius: 1px;
+        position: absolute;
+        left: 20px;
+        bottom: 0.5em;
+        right: 20px;
+        background-color: white;
+      }
+      ol {
+        max-width: 500px;
+      }
+      .main {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .main section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <nav>
+          <div><a href="/">Home</a></div>
+          <div class="active"><a href="/about">About</a></div>
+        </nav>
+      </header>
+      <!--$src/pages/about-->
+      <section>
+        <ol>
+          <li>
+            <h3>📖 Documentation</h3>
+            Jaspr&#39;s 
+            <a href="https://docs.page/schultek/jaspr">official documentation</a>
+             provides you with all information you need to get started.
+          </li>
+          <li>
+            <h3>💬 Community</h3>
+            Got stuck? Ask your question on the official 
+            <a href="https://docs.page/schultek/jaspr">Discord server</a>
+             for the Jaspr community.
+          </li>
+          <li>
+            <h3>📦 Ecosystem</h3>
+            Get official packages and integrations for your project like jaspr_router, jaspr_tailwind or jaspr_riverpod. Find packages built for Jaspr on pub.dev using the 
+            <a href="https://pub.dev/packages?q=topic%3Ajaspr">#jaspr</a>
+             topic, or publish your own.
+          </li>
+          <li>
+            <h3>💙 Support Jaspr</h3>
+            If you like Jaspr, consider starring us on 
+            <a href="https://github.com/schultek/jaspr">Github</a>
+             and tell your friends.
+          </li>
+        </ol>
+      </section>
+      <!--/$src/pages/about-->
+    </div>
+  </body>
+</html>
