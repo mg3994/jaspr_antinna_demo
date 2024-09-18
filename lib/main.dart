@@ -38,7 +38,7 @@ void main() {
       // Inline script to register the service worker
 
       // Add your service worker script here
-      // script([], src: 'script.js'),
+      script(src: 'script.js', []),
       // script([], src: 'service_worker.js'),
     ],
     body: const WebApp(),
