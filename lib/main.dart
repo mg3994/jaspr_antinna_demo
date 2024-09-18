@@ -39,7 +39,7 @@ void main() {
 
       // Add your service worker script here
       script(src: 'script.js', []),
-      // script([], src: 'service_worker.js'),
+      script(src: 'service_worker.js', []),
     ],
     body: const WebApp(),
   ));
