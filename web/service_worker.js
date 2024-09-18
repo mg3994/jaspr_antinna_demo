@@ -1,9 +1,10 @@
 const cacheName = 'offline-v1';
 const cacheFiles = [
     '/',
-    '/index.html',
-    '/styles.css',
-    '/script.js'
+    '/jaspr_antinna_demo/',
+    // '/styles.css',
+    '/script.js',
+    '/about/'
 ];
 
 self.addEventListener('install', e => {
