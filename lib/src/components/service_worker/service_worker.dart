@@ -1,9 +1,7 @@
-
-
 import 'package:jaspr/jaspr.dart';
-// import 'package:jaspr/jaspr.dart';
 @Import.onWeb('dart:html', show: [#window])
-import 'service_worker.import.dart';
+import 'service_worker.imports.dart';
+
 class ServiceWorker {
   ServiceWorker() {
     if (window.navigator.serviceWorker != null) {
