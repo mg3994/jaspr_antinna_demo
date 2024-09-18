@@ -20,24 +20,26 @@ class WebApp extends StatelessComponent {
     // create and return a [List] here.
 
     // Renders a <div class="main"> html element with children.
-    yield div(classes: 'main', [
-      Router(
-        routes: [
-          ShellRoute(
-            builder: (context, state, child) => Fragment(
-              children: [
-                const Header(),
-                // aside()
-                child,
-                // footer([]),
-              ],
-            ),
-            routes: WebAppRoutes.routes,
-          )
-          //  Route(path: '/*', builder: (context, state) => Error404()),
-        ],
-        //  errorBuilder: (context, state) => Error404(),
-      ),
+    yield script(src: 'script.js', [
+      div(classes: 'main', [
+        Router(
+          routes: [
+            ShellRoute(
+              builder: (context, state, child) => Fragment(
+                children: [
+                  const Header(),
+                  // aside()
+                  child,
+                  // footer([]),
+                ],
+              ),
+              routes: WebAppRoutes.routes,
+            )
+            //  Route(path: '/*', builder: (context, state) => Error404()),
+          ],
+          //  errorBuilder: (context, state) => Error404(),
+        ),
+      ])
     ]);
   }
 
