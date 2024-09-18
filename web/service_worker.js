@@ -3,7 +3,7 @@ const cacheFiles = [
     '/',
     '/index.html',
     '/styles.css',
-    '/app.js'
+    '/script.js'
 ];
 
 self.addEventListener('install', e => {
