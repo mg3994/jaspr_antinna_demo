@@ -248,7 +248,7 @@ class ChessGameState extends State<ChessGame> {
 
   @css
   static final styles = [
-    css.import('styles/games/chess/style.css')
+    css.import('/styles/games/chess/style.css')
     // css(':root').box
     // css('aside').
     // css('aside div').
