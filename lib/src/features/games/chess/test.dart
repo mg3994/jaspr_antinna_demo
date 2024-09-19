@@ -118,7 +118,7 @@ class Shape {
 class ChessBoard extends StatelessComponent {
   final Map<String, ChessPiece> boardPieces;
 
-  ChessBoard(this.boardPieces);
+  const ChessBoard(this.boardPieces,{super.key});
 
   @override
   Iterable<Component> build(BuildContext context) {
