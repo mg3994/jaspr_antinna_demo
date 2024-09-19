@@ -6,7 +6,8 @@ import '../../../components/use/use.dart';
 
 import 'script/enum.dart';
 import 'script/utils.dart';
-import 'dart:html';
+@Import.onWeb('dart:html', show: [#window])
+import 'index.imports.dart';
 
 class ChessGame extends StatefulComponent {
   const ChessGame({super.key});
