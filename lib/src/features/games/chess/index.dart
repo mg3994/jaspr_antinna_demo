@@ -1,4 +1,5 @@
 import 'package:jaspr/jaspr.dart';
+import 'package:jaspr/server.dart';
 
 import '../../../components/g/g.dart';
 import '../../../components/use/use.dart';
@@ -15,7 +16,7 @@ class ChessGameState extends State<ChessGame> {
 
   @override
   Iterable<Component> build(BuildContext context) sync* {
-   var document = parse(context);
+   var document = parse((context.binding as ServerAppBinding).loadFile('${(component as TemplateDocument).name}.template.html' ));
   // var v= context.binding.rootElement;
       final inputSpeedAsap = document.getElementById("speed-asap");
       final inputSpeedFast = document.getElementById("speed-fast");
