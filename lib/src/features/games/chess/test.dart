@@ -121,12 +121,12 @@ class ChessBoard extends StatelessComponent {
   const ChessBoard(this.boardPieces,{super.key});
 
   @override
-  Iterable<Component> build(BuildContext context) {
-    return [
+  Iterable<Component> build(BuildContext context)sync* {
+    yield 
       div(classes: 'chess-board', [
         for (String tile in BoardData.getBoardTiles()) _buildTile(tile),
-      ]),
-    ];
+      ]);
+    
   }
 
   // Builds a tile with or without a piece
@@ -156,9 +156,9 @@ class ChessApp extends StatelessComponent {
   const ChessApp(this.initialBoardPieces,{super.key});
 
   @override
-  Iterable<Component> build(BuildContext context) {
-    return [
-      ChessBoard(initialBoardPieces),
-    ];
+  Iterable<Component> build(BuildContext context) sync*{
+  yield
+      ChessBoard(initialBoardPieces)
+    ;
   }
 }
