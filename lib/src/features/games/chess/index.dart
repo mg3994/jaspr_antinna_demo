@@ -16,7 +16,7 @@ class ChessGameState extends State<ChessGame> {
 
   @override
   Iterable<Component> build(BuildContext context) sync* {
-   var document = parse((context.binding as ServerAppBinding).loadFile('${(component as TemplateDocument).name}.template.html' ));
+   var document = parse((context.binding as ServerAppBinding).loadFile('index.template.html' ));
   // var v= context.binding.rootElement;
       final inputSpeedAsap = document.getElementById("speed-asap");
       final inputSpeedFast = document.getElementById("speed-fast");
@@ -249,7 +249,7 @@ class ChessGameState extends State<ChessGame> {
 
   @css
   static final styles = [
-    css.import('/styles/games/chess/style.css')
+    css.import('https://mg3994.github.io/jaspr_antinna_demo/styles/games/chess/style.css')
     // css(':root').box
     // css('aside').
     // css('aside div').
