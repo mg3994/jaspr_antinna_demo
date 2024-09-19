@@ -16,16 +16,16 @@ class ChessGameState extends State<ChessGame> {
 
   @override
   Iterable<Component> build(BuildContext context) sync* {
-   var document = parse((context.binding as ServerAppBinding).loadFile('index.template.html' ));
-  // var v= context.binding.rootElement;
-      final inputSpeedAsap = document.getElementById("speed-asap");
-      final inputSpeedFast = document.getElementById("speed-fast");
-      final inputSpeedMedium = document.getElementById("speed-medium");
-      final inputSpeedSlow = document.getElementById("speed-slow");
-      final inputRandomBlack = document.getElementById("black-random");
-      final inputRandomWhite = document.getElementById("white-random");
-      final inputPerspectiveBlack = document.getElementById("black-perspective");
-      final inputPerspectiveWhite = document.getElementById("white-perspective");
+  //  var document = parse((context.binding as ServerAppBinding).loadFile('index.template.html' ));
+  // // var v= context.binding.rootElement;
+  //     final inputSpeedAsap = document.getElementById("speed-asap");
+  //     final inputSpeedFast = document.getElementById("speed-fast");
+  //     final inputSpeedMedium = document.getElementById("speed-medium");
+  //     final inputSpeedSlow = document.getElementById("speed-slow");
+  //     final inputRandomBlack = document.getElementById("black-random");
+  //     final inputRandomWhite = document.getElementById("white-random");
+  //     final inputPerspectiveBlack = document.getElementById("black-perspective");
+  //     final inputPerspectiveWhite = document.getElementById("white-perspective");
       // final game = game;
       // final view = view;
       //  inputPerspectiveBlack.addEventListener("change", this.updateViewPerspective.bind(this));
