@@ -2,7 +2,7 @@ import 'package:antinna/src/features/games/chess/script/enum.dart';
 import 'package:jaspr/jaspr.dart';
 
 import 'piece_model.dart';
-@Import.onWeb('dart:html', show: [#window])
+@Import.onWeb('dart:html', show: [#window, #DivElement])
 import 'utils.imports.dart';
 
 class Utils {
