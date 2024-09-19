@@ -1,6 +1,6 @@
 import 'package:jaspr/jaspr.dart';
 
-import '../../../components/g/g,dart';
+import '../../../components/g/g.dart';
 import '../../../components/use/use.dart';
 import 'package:html/parser.dart';
 
