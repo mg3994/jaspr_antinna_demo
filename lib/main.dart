@@ -9,7 +9,7 @@ import 'package:jaspr/server.dart';
 
 // This file is generated automatically by Jaspr, do not remove or edit.
 import 'jaspr_options.dart';
-import 'src/components/service_worker/service_worker.dart';
+import 'src/service_worker/service_worker.dart';
 import 'src/styles/style.dart';
 // Imports the [App] component.
 import 'web_app.dart';
@@ -22,6 +22,7 @@ void main() {
     options: defaultJasprOptions,
   );
   // ServiceWorker();
+  
 
   // Starts the app.
   //
@@ -33,6 +34,7 @@ void main() {
         baseHref, //comment me if https://<username>.github.io else if http://<username>.github.io/<repository> change the repository with base
     styles: AppStyles.styles,
     head: [
+      
       // The generated flutter manifest.
       link(rel: 'manifest', href: 'manifest.json'),
       // Inline script to register the service worker
