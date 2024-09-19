@@ -4,6 +4,7 @@ import 'package:jaspr/jaspr.dart';
 import 'enum.dart';
 
 class Shape {
+  const Shape();
   static Component shape(Player player, Piece piece) => svg(
           classes: player.name.toString(),
           width: 170.px,
